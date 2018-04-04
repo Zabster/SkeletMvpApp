@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="network_message_error">Нет подключения к интернету</string>
+    <string name="network_message_success">Сеть интернет доступна</string>
+    <string name="bash_im">Bash.im</string>
+    <string name="item_text">item text</string>
+</resources>
