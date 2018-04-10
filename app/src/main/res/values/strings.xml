@@ -4,4 +4,6 @@
     <string name="network_message_success">Сеть интернет доступна</string>
     <string name="bash_im">Bash.im</string>
     <string name="item_text">item text</string>
+    <string name="getlocation">getLocation</string>
+    <string name="login_in">Login In</string>
 </resources>

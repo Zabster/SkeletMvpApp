@@ -16,8 +16,6 @@ import io.reactivex.schedulers.Schedulers
 import retrofit2.Retrofit
 import javax.inject.Inject
 
-
-
 @InjectViewState
 class BasePresenter: MvpPresenter<BaseActivityInterfase>(), ConnectivityReceiver.ConnectivityRecieverListener {
 

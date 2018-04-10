@@ -39,7 +39,7 @@ class SplashPresenter : MvpPresenter<SplashPresenterInterface>(), ConnectivityRe
         object : CountDownTimer(1000, 500) {
             override fun onTick(millisUntilFinished: Long) {}
             override fun onFinish() {
-                viewState.startBaseActivity()
+                viewState.startLoginActivity()
             }
         }.start()
     }

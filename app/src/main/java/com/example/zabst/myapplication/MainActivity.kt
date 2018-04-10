@@ -10,6 +10,7 @@ import com.example.zabst.myapplication.app.App
 import com.example.zabst.myapplication.presener.SplashPresenter
 import com.example.zabst.myapplication.presenterinterface.SplashPresenterInterface
 import com.example.zabst.myapplication.ui.BaseActivity
+import com.example.zabst.myapplication.ui.LoginActivity
 
 class MainActivity : MvpAppCompatActivity(), SplashPresenterInterface {
 
@@ -31,6 +32,13 @@ class MainActivity : MvpAppCompatActivity(), SplashPresenterInterface {
 
     override fun startBaseActivity() {
         val intent = Intent(this@MainActivity, BaseActivity::class.java)
+        intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+        startActivity(intent)
+    }
+
+    override fun startLoginActivity() {
+        val intent = Intent(this@MainActivity, LoginActivity::class.java)
+        intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
         startActivity(intent)
     }
 }

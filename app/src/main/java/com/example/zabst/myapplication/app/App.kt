@@ -4,6 +4,7 @@ import android.support.multidex.MultiDexApplication
 import com.example.zabst.myapplication.component.AppComponent
 import com.example.zabst.myapplication.component.DaggerAppComponent
 import com.example.zabst.myapplication.module.AppModule
+import com.example.zabst.myapplication.module.DataStoreModule
 import com.example.zabst.myapplication.module.NetModule
 import com.example.zabst.myapplication.reciver.ConnectivityReceiver
 
@@ -19,6 +20,7 @@ class App : MultiDexApplication() {
         appComponent = DaggerAppComponent.builder()
                 .appModule(AppModule(this))
                 .netModule(NetModule("https://umorili.herokuapp.com"))
+                .dataStoreModule(DataStoreModule())
                 .build()
     }
 
