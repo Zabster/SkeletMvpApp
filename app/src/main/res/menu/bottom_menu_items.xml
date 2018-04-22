@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_one"
+        android:enabled="true"
+        android:icon="@drawable/com_facebook_button_icon"
+        android:title="one"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_two"
+        android:enabled="true"
+        android:icon="@drawable/com_facebook_close"
+        android:title="two"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_three"
+        android:enabled="true"
+        android:icon="@drawable/com_facebook_auth_dialog_header_background"
+        android:title="three"
+        app:showAsAction="ifRoom" />
+</menu>

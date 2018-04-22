@@ -9,4 +9,6 @@ interface RestApi {
 
     @GET("/api/get")
     fun getData(@Query("name") resName: String, @Query("num") count: Int): Observable<List<ResponseModel>>
+
+
 }

@@ -15,7 +15,7 @@ class LoginPresenter: MvpPresenter<LoginActivityInterface>(), ConnectivityReceiv
     }
 
     override fun onNetworkConnectionChange(isConnected: Boolean) {
-        //do something
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
     }
 
 }

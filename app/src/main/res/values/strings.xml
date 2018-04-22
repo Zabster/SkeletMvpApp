@@ -1,9 +1,18 @@
 <resources>
+
+    <!-- Facebook api -->
+    <string name="facebook_app_id"></string>
+    <string name="fb_login_protocol_scheme"></string>
+
+    <!-- texts -->
     <string name="app_name">My Application</string>
     <string name="network_message_error">Нет подключения к интернету</string>
     <string name="network_message_success">Сеть интернет доступна</string>
     <string name="bash_im">Bash.im</string>
     <string name="item_text">item text</string>
-    <string name="getlocation">getLocation</string>
+    <string name="getlocation">get location</string>
     <string name="login_in">Login In</string>
+    <string name="no_content">No content</string>
+    <string name="title_location_dialog">Needed location access</string>
+    <string name="text_location_dialog">Please, enabled location tracking in settings</string>
 </resources>

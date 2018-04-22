@@ -36,7 +36,7 @@ class NetModule(var url: String) {
         client.cache(cache)
 
         val logging = HttpLoggingInterceptor()
-        logging.level = HttpLoggingInterceptor.Level.BODY
+        logging.level = HttpLoggingInterceptor.Level.NONE
 
         client.addInterceptor(logging)
 

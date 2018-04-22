@@ -15,34 +15,101 @@
         android:inputType="textEmailAddress"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.452" />
 
     <EditText
         android:id="@+id/editText2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
         android:ems="10"
         android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText" />
+        app:layout_constraintTop_toBottomOf="@+id/editText"
+        app:layout_constraintVertical_bias="0.035" />
 
-    <com.gc.materialdesign.views.ButtonRectangle
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/login_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText2"
+        app:layout_constraintVertical_bias="0.562">
+
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/buttonFacebook"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:visibility="gone" />
+
+        <net.steamcrafted.materialiconlib.MaterialIconView
+            android:id="@+id/iconFacebook"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            android:background="@color/colorPrimary"
+            android:scaleType="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:materialIcon="facebook"
+            app:materialIconColor="#fff"
+            app:materialIconSize="24dp" />
+
+        <net.steamcrafted.materialiconlib.MaterialIconView
+            android:id="@+id/iconGooglePlus"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            android:background="@color/holo_red_light"
+            android:scaleType="center"
+            app:layout_constraintStart_toEndOf="@+id/iconFacebook"
+            app:materialIcon="google_plus"
+            app:materialIconColor="#fff"
+            app:materialIconSize="24dp" />
+
+        <net.steamcrafted.materialiconlib.MaterialIconView
+            android:id="@+id/iconLinkedin"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:background="@color/blue_normal"
+            android:scaleType="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/iconGooglePlus"
+            app:materialIcon="linkedin"
+            app:materialIconColor="#fff"
+            app:materialIconSize="24dp" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.v7.widget.AppCompatButton
         android:id="@+id/login_btn"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:layout_marginTop="84dp"
-        android:text="@string/login_in"
         android:background="#1E88E5"
+        android:text="@string/login_in"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText2"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.857" />
 
 
 </android.support.constraint.ConstraintLayout>
